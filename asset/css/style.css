@@ -1,0 +1,219 @@
+body,
+html,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+body {
+    outline: 0;
+    vertical-align: baseline;
+    font-size: 14px;
+        font-family: 'Sawarabi Gothic', sans-serif
+}
+
+a {
+    color: #231815;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-size: 24px;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* --------- cookie introduce --------- */
+#cookie-introduce{
+    background: url(../img/img05.jpg) no-repeat center;
+    color: #fff;
+    padding-bottom: 60px;
+    padding-top: 50px;
+}
+.content{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#cookie-introduce h2.title{
+    font-size: 36px;
+}
+.cookie-introduct-content .item{
+    margin-bottom: 60px;
+}
+.cookie-introduct-content .item h3{
+    font-size: 26px;
+}
+.cookie-introduct-content .item p{
+    line-height: 1.8em;
+}
+.cookie-introduct-content .item ul li{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+
+/* ---------- wedding service -------------- */
+#wedding-service{
+    background-color: #eeeded;  
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+#wedding-service h2.title{
+    text-align: center;
+    font-size: 48px;
+    line-height: 1em;
+}
+#wedding-service .title span{
+    display: block;
+    font-size: 36px;
+}
+.wedding-service-content{
+    margin-top: 60px;
+}
+.wedding-service-content .row-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wedding-service-content .row-1:first-child{
+    margin-bottom: 50px;
+}
+
+.wedding-service-content .item{
+    width: 20%;
+}
+.img-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #b98617;
+    text-align: center;
+    letter-spacing: -0.1em;
+    line-height: 1.2em;
+}
+
+
+/* ---------- wedding contents --------------- */
+
+#wedding-contents{
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+#wedding-contents h2.title{
+    text-align: center;
+    font-size: 48px;
+    line-height: 1em;
+    color: #b98617;
+}
+#wedding-contents h2.title span{
+    font-size: 36px;
+    display: block;
+}
+
+#wedding-contents .wedding-content{
+    display: flex;
+    justify-content: space-between;
+}
+#wedding-contents .content{
+    margin-top: 30px;
+}
+.wedding-content .item{
+    width: 24%;
+}
+.wedding-tutorial{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b98617;
+    line-height: 1.2em;
+}
+
+.company-info .info, .company-info .follow{
+    width: 50%;
+}
+.company-info{
+    margin-top: 70px;
+}
+.company-info .follow h4.title{
+    font-size: 30px;
+    color: #b98617;
+}
+.company-info .follow > h4.title span{
+    letter-spacing: -4px;
+    font-size: 26px;
+}
+.info{
+    float: left;
+    display: flex;
+    color: #929090 !important;
+
+}
+.info ul{
+    list-style: none;
+    padding: 0;
+}
+.info ul li{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.info ul li a{
+    color: #929090 !important;
+
+}
+.follow{
+    float: right;
+    text-align: center;
+}
+.info .col-1{
+    width: 30%;
+}
+.info .col-1 h4.title{
+    font-size: 18px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social > a{
+    padding: 10px;
+}
