@@ -217,3 +217,127 @@ img {
 .social > a{
     padding: 10px;
 }
+
+/* --------- wedding privacy policy ------------ */
+
+#privacy-policy .breadcrumb{
+    border-bottom: 1px solid #dcdace;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+.breadcrumb-content{
+    font-size: 24px;
+}
+.breadcrumb-content span{
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+#privacy-policy .privacy-policy-content .wedding-contact{
+    background-color: #b98617;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 60px;
+    padding: 15px 0;
+}
+
+#privacy-policy .wedding-policy{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+.wedding-policy .item{
+    width: 46%;
+}
+
+.wedding-policy-link{
+    background-color: #b98617;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    padding: 13px;
+    margin-top: -6px;
+}
+.wedding-policy-link .link-border{
+    border: 2px solid #fff;
+    line-height: 2em;
+    position: relative;
+}
+
+.link-border::after{
+    content: "";
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    position: absolute;
+    right: 25px;
+    top: 14%;
+}
+
+.link-border::before{
+    content: "";
+    background-image: url(../img/img0/next.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    height: 13px;
+    width: 18px;
+    right: 27px;
+    top: 31%;
+    z-index: 21;
+}
+.wedding-contact .contact{
+    width: 50%;
+    font-size: 24px;
+    text-align: center;
+}
+.contact .tel{
+    font-size: 50px;
+}
+.contact.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact.right img{
+    padding: 10px;
+}
+
+/* policy-personal-info */
+
+#policy-personal-info .content{
+    font-size: 15px;
+}
+
+/* @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700"); */
+  
+ol {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 40px;
+  line-height: 1.4em;
+}
+ol li {
+  margin: 0 0 0.5rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+  padding: 5px 0;
+}
+ol li::before {
+  content: counter(my-awesome-counter);
+  color: #7d5a0b;
+  font-weight: bold;
+  position: absolute;
+  --size: 26px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  border-radius: 50%;
+  border: 1px solid #7d5a0b;
+  text-align: center;
+}
+
