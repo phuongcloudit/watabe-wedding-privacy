@@ -11,8 +11,8 @@ h6 {
     margin: 0;
     padding: 0;
     font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 
@@ -20,7 +20,7 @@ body {
     outline: 0;
     vertical-align: baseline;
     font-size: 14px;
-        font-family: 'Sawarabi Gothic', sans-serif
+    font-family: 'Sawarabi Gothic', sans-serif
 }
 
 a {
@@ -63,64 +63,99 @@ img {
 }
 
 /* --------- cookie introduce --------- */
-#cookie-introduce{
+#cookie-introduce {
     background: url(../img/img05.jpg) no-repeat center;
+    background-size: cover;
     color: #fff;
     padding-bottom: 60px;
     padding-top: 50px;
 }
-.content{
+.cookie-introduct-content{
+    margin-top: 25px;
+}
+
+.content {
     padding-left: 30px;
     padding-right: 30px;
 }
-#cookie-introduce h2.title{
+
+#cookie-introduce h2.title {
     font-size: 36px;
 }
-.cookie-introduct-content .item{
+
+.cookie-introduct-content .item {
     margin-bottom: 60px;
 }
-.cookie-introduct-content .item h3{
+
+.cookie-introduct-content .item h3 {
     font-size: 26px;
 }
-.cookie-introduct-content .item p{
+
+.cookie-introduct-content .item p {
     line-height: 1.8em;
 }
-.cookie-introduct-content .item ul li{
+
+.cookie-introduct-content .item ul li {
     padding-top: 7px;
     padding-bottom: 7px;
 }
 
+@media screen and (max-width: 768px){
+    #cookie-introduce {
+        padding-bottom: 40px;
+        padding-top: 30px;
+    }
+    #cookie-introduce h2.title {
+        font-size: 24px;
+    }
+    .cookie-introduct-content .item {
+        margin-bottom: 40px;
+    }
+    .cookie-introduct-content .item h3 {
+        font-size: 18px;
+    }
+    .cookie-introduct-content{
+        margin-top: 15px;
+    }
+}
+
 
 /* ---------- wedding service -------------- */
-#wedding-service{
-    background-color: #eeeded;  
+#wedding-service {
+    background-color: #eeeded;
     padding-top: 50px;
     padding-bottom: 70px;
 }
-#wedding-service h2.title{
+
+#wedding-service h2.title {
     text-align: center;
     font-size: 48px;
     line-height: 1em;
 }
-#wedding-service .title span{
+
+#wedding-service .title span {
     display: block;
     font-size: 36px;
 }
-.wedding-service-content{
+
+.wedding-service-content {
     margin-top: 60px;
 }
-.wedding-service-content .row-1{
+
+.wedding-service-content .row-1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.wedding-service-content .row-1:first-child{
+
+.wedding-service-content .row-1:first-child {
     margin-bottom: 50px;
 }
 
-.wedding-service-content .item{
+.wedding-service-content .item {
     width: 20%;
 }
+
 .img-description {
     display: flex;
     justify-content: center;
@@ -132,122 +167,305 @@ img {
     line-height: 1.2em;
 }
 
+@media screen and (max-width: 768px){
+    #wedding-service {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    #wedding-service h2.title {
+        font-size: 22px;
+    }
+    #wedding-service .title span {
+        font-size: 16px;
+    }
+    .wedding-service-content {
+        margin-top: 30px;
+    }
+    .wedding-service-content .item {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    .wedding-service-content .row-1:first-child {
+        margin-bottom: 0px;
+    }
+    .wedding-service-content .row-1{
+        max-width: 400px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+}
+
 
 /* ---------- wedding contents --------------- */
 
-#wedding-contents{
+#wedding-contents {
     padding-top: 60px;
     padding-bottom: 50px;
 }
-#wedding-contents h2.title{
+
+#wedding-contents h2.title {
     text-align: center;
     font-size: 48px;
     line-height: 1em;
     color: #b98617;
 }
-#wedding-contents h2.title span{
+
+#wedding-contents h2.title span {
     font-size: 36px;
     display: block;
 }
 
-#wedding-contents .wedding-content{
+#wedding-contents .wedding-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-#wedding-contents .content{
+
+#wedding-contents .content {
     margin-top: 30px;
 }
-.wedding-content .item{
+
+.wedding-content .item {
     width: 24%;
 }
-.wedding-tutorial{
+
+.wedding-tutorial {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #b98617;
     line-height: 1.2em;
 }
-
-.company-info .info, .company-info .follow{
+@media screen and (max-width: 768px){
+    #wedding-contents {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    #wedding-contents h2.title {
+        font-size: 24px;
+    }
+    #wedding-contents h2.title span {
+        font-size: 16px;
+    }
+    #wedding-contents .content {
+        margin-top: 20px;
+    }
+    .wedding-content .item {
+        width: 48%;
+        padding-bottom: 20px;
+    }
+    #wedding-contents .wedding-content{
+        max-width: 484px;
+        margin: 0 auto;
+    }
+}
+/* ----------------- company-info ----------------- */
+.company-info .info,
+.company-info .follow {
     width: 50%;
 }
-.company-info{
+
+.company-info {
     margin-top: 70px;
 }
-.company-info .follow h4.title{
+
+.company-info .follow h4.title {
     font-size: 30px;
     color: #b98617;
 }
-.company-info .follow > h4.title span{
+
+.company-info .follow>h4.title span {
     letter-spacing: -4px;
     font-size: 26px;
 }
-.info{
+
+.info {
     float: left;
     display: flex;
     color: #929090 !important;
 
 }
-.info ul{
+
+.info ul {
     list-style: none;
     padding: 0;
 }
-.info ul li{
+
+.info ul li {
     padding-top: 7px;
     padding-bottom: 7px;
 }
-.info ul li a{
+
+.info ul li a {
     color: #929090 !important;
 
 }
-.follow{
+
+.follow {
     float: right;
     text-align: center;
 }
-.info .col-1{
+
+.info .col1 {
     width: 30%;
 }
-.info .col-1 h4.title{
+
+.info .col1 h4.title {
     font-size: 18px;
 }
-.social{
+
+.social {
     display: flex;
     justify-content: center;
 }
-.social > a{
+
+.social>a {
     padding: 10px;
+}
+@media screen and (max-width: 768px){
+    .company-info {
+        margin-top: 40px;
+    }
+    .company-info .info, .company-info .follow {
+        width: 100%;
+    }
+    .info {
+        justify-content: center;
+    }
+    .company-info .follow h4.title {
+        font-size: 22px;
+        color: #b98617;
+    }
+    .company-info .follow>h4.title span {
+        letter-spacing: -4px;
+        font-size: 18px;
+    }
+
 }
 
 
 /* page-heading */
-#page-heading{
+#page-heading {
     padding-top: 60px;
     padding-bottom: 30px;
 }
 
-#page-heading .top-heading .tt_watabe{
+#page-heading .top-heading .tt_watabe {
     font-size: 60px;
+    margin-bottom: 40px;
 }
-.top-heading .description{
+
+.top-heading .description {
     font-size: 15px;
+    letter-spacing: -0.1em;
 }
-.top-heading .description a{
+
+.top-heading .description a {
     color: #ff5500;
 }
 
-/* handling-personal-info */
-#handling-personal-info{
+@media screen and (max-width: 768px) {
+    #page-heading .top-heading .tt_watabe {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* ---------- policy-personal-info ------------ */
+
+
+/* #policy-personal-info{
     padding-top: 60px;
     padding-bottom: 80px;
-}
-.cover-img{
+} */
+#policy-personal-info .cover-img {
     margin-top: 45px;
 }
-#handling-personal-info h2.title{
+
+#policy-personal-info h2.title::before {
+    content: "01";
+    color: #7d5a0c;
+    border: 2px solid #7d5a0c;
+    height: 60px;
+    width: 60px;
+    border-radius: 15%;
+    display: inline-block;
     font-size: 36px;
-    padding-left: 20px;
 }
-#handling-personal-info h2.title::before{
+
+#policy-personal-info h2.title {
+    font-size: 36px;
+}
+
+#policy-personal-info h2.title p {
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    #policy-personal-info h2.title {
+        font-size: 24px;
+    }
+
+    #policy-personal-info h2.title::before {
+        height: 40px;
+        width: 40px;
+        border-radius: 15%;
+        font-size: 26px;
+    }
+    #policy-personal-info .cover-img{
+        margin-top: 20px;
+    }
+}
+
+/* ------------------- handling-personal-info ------------------- */
+#handling-personal-info {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+#handling-personal-info::before {
+    content: "";
+    background-image: url(../img/img04.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 800px;
+    left: 0;
+    background-size: contain;
+    width: 30%;
+    height: 964px;
+    z-index: -1;
+}
+
+#handling-personal-info::after {
+    content: "";
+    background-image: url(../img/img03.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    top: 800px;
+    right: 0;
+    background-size: contain;
+    width: 100%;
+    height: 1394px;
+    z-index: -2;
+}
+
+#handling-personal-info .cover-img {
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+#handling-personal-info h2.title {
+    font-size: 36px;
+}
+
+#handling-personal-info h2.title p {
+    display: inline-block;
+}
+
+#handling-personal-info h2.title::before {
     content: "02";
     color: #7d5a0c;
     border: 2px solid #7d5a0c;
@@ -255,27 +473,263 @@ img {
     width: 60px;
     border-radius: 15%;
     display: inline-block;
+    font-size: 36px;
 }
-#handling-personal-info h2.title p{
+
+#handling-personal-info h2.title p {
     padding-left: 15px;
 }
 
+#handling-personal-info .item h3.title {
+    font-size: 30px;
+    border-left: 8px solid #775200;
+    padding-left: 10px;
+}
+
+#handling-personal-info .item {
+    margin-bottom: 30px;
+}
+
+
+
+#handling-personal-info .item ol li::before {
+    content: counter(my-awesome-counter);
+    color: #7d5a0b;
+    font-weight: bold;
+    position: absolute;
+    --size: 20px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    border-radius: 50%;
+    border: 1px solid #7d5a0b;
+    text-align: center;
+}
+
+#handling-personal-info .item ol li {
+    padding: 0;
+}
+
+#handling-personal-info .rule {
+    position: relative;
+    margin-left: 30px;
+}
+
+#handling-personal-info .rule::before {
+    content: "";
+    position: absolute;
+    background: #7d5a0b;
+    color: #fff;
+    font-weight: bold;
+    --size: 20px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    border-radius: 50%;
+    border: 1px solid #7d5a0b;
+    text-align: center;
+    font-size: 16px;
+}
+
+#handling-personal-info .rule-1::before {
+    content: "1";
+}
+
+#handling-personal-info .rule-2::before {
+    content: "2";
+}
+
+.rule ul {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    padding-left: 0;
+}
+
+.rule ul li {
+    margin: 0 0 0.5rem 0;
+    position: relative;
+}
+
+.rule ul li::before {
+    content: counter(my-awesome-counter, lower-alpha);
+    counter-increment: my-awesome-counter;
+    /* content: counter(my-counter, lower-latin); */
+    color: #7d5a0b;
+    position: absolute;
+    --size: 20px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    border-radius: 50%;
+    border: 1px solid #7d5a0b;
+    text-align: center;
+}
+
+.inner-title .title {
+    font-size: 18px;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.inner-title .title p {
+    background-color: #7d5a0b;
+    padding: 4px 20px;
+}
+
+.inner-title .title::before {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #7d5a0b;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #7d5a0b;
+}
+
+.inner-title .tl-1::before {
+    content: "1";
+}
+
+.inner-title .tl-2::before {
+    content: "2";
+}
+
+.inner-title .content {
+    margin-top: 20px;
+}
+
+.item .content>p {
+    margin-top: 10px;
+    font-size: 15px;
+    /* line-height: 1.4em; */
+}
+
+.item .pdf-hyper-link {
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.item .pdf-hyper-link ul li a {
+    color: #ff0000;
+}
+
+.item .pdf-hyper-link ul li a img {
+    width: 15px;
+    height: auto;
+}
+
+.item .pdf-hyper-link ul {
+    /* list-style-image: url(../img/img0/pdf-icon.png); */
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.item ul.paper-types {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.item ul.paper-types li::before {
+    content: "";
+    position: absolute;
+    --size: 12px;
+    left: calc(-1 * var(--size) - 10px);
+    width: var(--size);
+    height: var(--size);
+    bottom: 0;
+    border-radius: 50%;
+    background-color: #775200;
+    text-align: center;
+}
+
+.item ul.paper-types li {
+    margin: 0 0 0.5rem 0;
+    position: relative;
+}
+
+@media screen and (max-width: 768px){
+    #handling-personal-info {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    #handling-personal-info h2.title {
+        font-size: 24px;
+    }
+    #handling-personal-info h2.title::before {
+        height: 40px;
+        width: 40px;
+        border-radius: 15%;
+        font-size: 26px;
+    }
+    #handling-personal-info .cover-img {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    #handling-personal-info .item h3.title {
+        font-size: 20px;
+    }
+    .item .pdf-hyper-link {
+        padding: 15px 0;
+        font-size: 16px;
+    }
+}
+
+/* .item.bg-1{
+      position: relative;
+      /* background: url(../img/img03.jpg) no-repeat right center;
+      background-size: contain; 
+  }
+   .item.bg-1::before{
+  }
+  .item.bg-2{
+    background: url(../img/img04.jpg) no-repeat left center;
+    background-size: contain;
+} */
 /* --------- wedding privacy policy ------------ */
 
-#privacy-policy .breadcrumb{
+#privacy-policy {
+    padding-bottom: 80px;
+}
+
+#privacy-policy .breadcrumb {
     border-bottom: 1px solid #dcdace;
     padding-top: 60px;
     padding-bottom: 25px;
 }
-.breadcrumb-content{
+
+.breadcrumb-content {
     font-size: 24px;
 }
-.breadcrumb-content span{
+
+.breadcrumb-content span {
     padding-left: 20px;
     padding-right: 20px
 }
+.privacy-policy-content{
+    margin-top: 55px;
+}
 
-#privacy-policy .privacy-policy-content .wedding-contact{
+#privacy-policy .privacy-policy-content .wedding-contact {
     background-color: #b98617;
     display: flex;
     justify-content: space-between;
@@ -284,16 +738,16 @@ img {
     padding: 15px 0;
 }
 
-#privacy-policy .wedding-policy{
+#privacy-policy .wedding-policy {
     display: flex;
     justify-content: space-between;
-    margin-top: 55px;
 }
-.wedding-policy .item{
+
+.wedding-policy .item {
     width: 46%;
 }
 
-.wedding-policy-link{
+.wedding-policy-link {
     background-color: #b98617;
     text-align: center;
     font-size: 18px;
@@ -301,13 +755,14 @@ img {
     padding: 13px;
     margin-top: -6px;
 }
-.wedding-policy-link .link-border{
+
+.wedding-policy-link .link-border {
     border: 2px solid #fff;
     line-height: 2em;
     position: relative;
 }
 
-.link-border::after{
+.link-border::after {
     content: "";
     background-color: #fff;
     width: 25px;
@@ -318,7 +773,7 @@ img {
     top: 14%;
 }
 
-.link-border::before{
+.link-border::before {
     content: "";
     background-image: url(../img/img0/next.png);
     background-repeat: no-repeat;
@@ -330,56 +785,131 @@ img {
     top: 31%;
     z-index: 21;
 }
-.wedding-contact .contact{
+
+.wedding-contact .contact {
     width: 50%;
     font-size: 24px;
     text-align: center;
 }
-.contact .tel{
+
+.contact .tel {
     font-size: 50px;
 }
-.contact.right{
+
+.contact.right {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.contact.right img{
+
+.contact.right img {
     padding: 10px;
 }
 
-/* policy-personal-info */
+@media screen and (max-width: 768px){
+    #privacy-policy {
+        padding-bottom: 40px;
+    }
+    #privacy-policy .breadcrumb {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+    .breadcrumb-content {
+        font-size: 16px;
+    }
+    .privacy-policy-content {
+        margin-top: 25px;
+    }
+    #privacy-policy .wedding-policy {
+        display: inline-block;
+        max-width: 470px;
+        margin: 0 auto;
+    }
+    #privacy-policy .wedding-policy .item{
+        width: 100%;
+    }
+    #privacy-policy .privacy-policy-content .wedding-contact {
+        display: inline-block;
+        width: 100%;
+        margin-top: 40px;
+    }
+    #privacy-policy .privacy-policy-content .wedding-contact .contact{
+        font-size: 16px;
+        width: 100%;
+    }
+    .contact.right img {
+        padding: 0;
+    }
+    .contact .tel {
+        font-size: 35px;
+    }
 
-#policy-personal-info .content{
+}
+
+/* --------------- policy-personal-info --------------- */
+
+#policy-personal-info .content {
     font-size: 15px;
 }
 
 /* @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700"); */
-  
+
 ol {
-  counter-reset: my-awesome-counter;
-  list-style: none;
-  padding-left: 40px;
-  line-height: 1.4em;
-}
-ol li {
-  margin: 0 0 0.5rem 0;
-  counter-increment: my-awesome-counter;
-  position: relative;
-  padding: 5px 0;
-}
-ol li::before {
-  content: counter(my-awesome-counter);
-  color: #7d5a0b;
-  font-weight: bold;
-  position: absolute;
-  --size: 26px;
-  left: calc(-1 * var(--size) - 10px);
-  line-height: var(--size);
-  width: var(--size);
-  height: var(--size);
-  top: 0;
-  border-radius: 50%;
-  border: 1px solid #7d5a0b;
-  text-align: center;
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    padding-left: 40px;
+    line-height: 1.4em;
 }
 
+ol li {
+    margin: 0 0 0.5rem 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+    padding: 5px 0;
+}
+
+ol li::before {
+    content: counter(my-awesome-counter);
+    color: #7d5a0b;
+    font-weight: bold;
+    position: absolute;
+    --size: 26px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    border-radius: 50%;
+    border: 1px solid #7d5a0b;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        min-width: 100%;
+        font-size: 14px;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block !important;
+    }
+
+    .container {
+        width: 100% !important;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+    }
+    .content{
+        padding-left: 20px;
+    padding-right: 20px;
+    }
+}
