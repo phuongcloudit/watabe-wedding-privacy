@@ -217,3 +217,45 @@ img {
 .social > a{
     padding: 10px;
 }
+
+
+/* page-heading */
+#page-heading{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+#page-heading .top-heading .tt_watabe{
+    font-size: 60px;
+}
+.top-heading .description{
+    font-size: 15px;
+}
+.top-heading .description a{
+    color: #ff5500;
+}
+
+/* handling-personal-info */
+#handling-personal-info{
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.cover-img{
+    margin-top: 45px;
+}
+#handling-personal-info h2.title{
+    font-size: 36px;
+    padding-left: 20px;
+}
+#handling-personal-info h2.title::before{
+    content: "02";
+    color: #7d5a0c;
+    border: 2px solid #7d5a0c;
+    height: 60px;
+    width: 60px;
+    border-radius: 15%;
+    display: inline-block;
+}
+#handling-personal-info h2.title p{
+    padding-left: 15px;
+}
